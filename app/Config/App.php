@@ -20,7 +20,8 @@ class App extends BaseConfig
     //php spark serve --host=0.0.0.0 --port=8080
     // public string $baseURL = 'http://' . ($_SERVER['HTTP_HOST'] ?? 'localhost:8080') . '/';
 
-    public string $baseURL = 'http://0.0.0.0:8080/';
+    // public string $baseURL = 'http://0.0.0.0:8080/';
+     public string $baseURL = 'https://172.16.61.188/App_dev/humai_web/public/';
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
      * If you want to accept multiple Hostnames, set this.
@@ -160,7 +161,7 @@ class App extends BaseConfig
      * secure, the user will be redirected to a secure version of the page
      * and the HTTP Strict Transport Security (HSTS) header will be set.
      */
-    public bool $forceGlobalSecureRequests = false;
+    public bool $forceGlobalSecureRequests = true;
 
     /**
      * --------------------------------------------------------------------------
@@ -203,3 +204,77 @@ class App extends BaseConfig
      */
     public bool $CSPEnabled = false;
 }
+
+// <?php
+
+// namespace Config;
+
+// use CodeIgniter\Config\BaseConfig;
+
+// class App extends BaseConfig
+// {
+//     /**
+//      * Base Site URL
+//      */
+//     public string $baseURL = 'http://172.16.54.177/CacaoDx/public/';
+
+//     /**
+//      * Allowed Hostnames
+//      */
+//     public array $allowedHostnames = [];
+
+//     /**
+//      * Index File
+//      */
+//     public string $indexPage = ''; // empty if using .htaccess for clean URLs
+
+//     /**
+//      * URI Protocol
+//      */
+//     public string $uriProtocol = 'REQUEST_URI';
+
+//     /**
+//      * Allowed URL Characters
+//      */
+//     public string $permittedURIChars = 'a-z 0-9~%.:_\-';
+
+//     /**
+//      * Default Locale
+//      */
+//     public string $defaultLocale = 'en';
+
+//     /**
+//      * Negotiate Locale
+//      */
+//     public bool $negotiateLocale = false;
+
+//     /**
+//      * Supported Locales
+//      */
+//     public array $supportedLocales = ['en'];
+
+//     /**
+//      * Application Timezone
+//      */
+//     public string $appTimezone = 'UTC';
+
+//     /**
+//      * Default Character Set
+//      */
+//     public string $charset = 'UTF-8';
+
+//     /**
+//      * Force Global Secure Requests
+//      */
+//     public bool $forceGlobalSecureRequests = false;
+
+//     /**
+//      * Reverse Proxy IPs
+//      */
+//     public array $proxyIPs = [];
+
+//     /**
+//      * Content Security Policy
+//      */
+//     public bool $CSPEnabled = false;
+// }
