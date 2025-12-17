@@ -16,8 +16,11 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost:8080/';
+    // public string $baseURL = 'http://localhost:8080/';
+    //php spark serve --host=0.0.0.0 --port=8080
+    // public string $baseURL = 'http://' . ($_SERVER['HTTP_HOST'] ?? 'localhost:8080') . '/';
 
+    public string $baseURL = 'http://0.0.0.0:8080/';
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
      * If you want to accept multiple Hostnames, set this.
