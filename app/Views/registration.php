@@ -16,6 +16,13 @@
       
         <div class="card shadow-lg card-registration">
           <div class="card-body p-5">
+            <!-- Back Button -->
+            <div class="mb-3">
+              <a href="<?= site_url('/login'); ?>" class="btn-back">
+                ← Back to Login
+              </a>
+            </div>
+
             <h3 class="text-center mb-5">Registration Form</h3>
             
             <!-- CI Form -->
@@ -61,4 +68,5 @@
     </div>
   </div>
 </section>
-
+</body>
+</html>

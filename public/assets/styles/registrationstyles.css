@@ -122,6 +122,24 @@ button {
   background-color: var(--primary-color);
   color: var(--text-light);
   transition: background-color var(--transition-speed), transform var(--transition-speed);
+} 
+
+/* Back Button Style */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #174d2b;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #f0f0f0;
+  color: #0f3a1f;
 }
 
 button:hover {

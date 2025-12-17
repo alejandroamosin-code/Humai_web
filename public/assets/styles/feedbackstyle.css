@@ -17,6 +17,9 @@ body {
   color: white;
   min-height: 100vh;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .sidebar .logo {
@@ -32,6 +35,7 @@ body {
 .sidebar ul {
   list-style: none;
   padding: 0;
+  flex: 1; /* This pushes the logout button to the bottom */
 }
 
 .sidebar ul li {
@@ -54,14 +58,20 @@ body {
 }
 
 .logout {
-  background: #0c340f;
+  background-color: #ff5c5c;
   color: white;
   border: none;
   padding: 10px;
-  width: 100%;
-  margin-top: 30px;
+  font-size: 1rem;
   cursor: pointer;
-  border-radius: 8px;
+  margin-top: auto;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+
+.logout:hover {
+  background: #0a2a0d;
 }
 
 /* Content Section */
@@ -171,7 +181,8 @@ body {
   color: #777;
   font-size: 12px;
 }
- /* Pagination Styles */
+
+/* Pagination Styles */
 .pagination {
   display: flex;
   justify-content: center;

@@ -24,11 +24,11 @@
       </div>
 
       <!-- Dropdown Filter -->
-      <select class="feedback-filter">
+      <!-- <select class="feedback-filter">
         <option value="all">All</option>
         <option value="positive">Positive</option>
         <option value="negative">Negative</option>
-      </select>
+      </select> -->
 
       <!-- Feedback List -->
       <div class="feedback-list">

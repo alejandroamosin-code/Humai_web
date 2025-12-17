@@ -38,6 +38,19 @@ $routes->group('', ['filter' => 'auth'], function($routes) {
     $routes->get('feedback', 'FeedbackController::index');
     $routes->get('feedback/delete/(:num)', 'FeedbackController::delete/$1');
     $routes->post('feedback/search', 'FeedbackController::search');
-
     
+});
+
+
+ // API Routes (for React Native Mobile App)
+$routes->group('api', ['filter' => 'cors'], function($routes) {
+    // Public routes
+    $routes->post('login', 'ApiController::login');
+    $routes->post('register', 'ApiController::register');
+    
+    // User routes
+    $routes->get('users', 'ApiController::users');
+    $routes->get('user/(:num)', 'ApiController::user/$1');
+    $routes->put('user/(:num)', 'ApiController::updateUser/$1');
+    $routes->delete('user/(:num)', 'ApiController::deleteUser/$1');
 });

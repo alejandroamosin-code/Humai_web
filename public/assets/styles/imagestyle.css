@@ -64,15 +64,16 @@ body {
 
 /* logout button */
 .logout {
-  margin-top: auto;
-  background: linear-gradient(180deg,#1f722a, #15461f);
-  color: #fff;
-  border: 2px solid rgba(255,255,255,0.06);
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-weight: 600;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 6px 14px rgba(19,62,43,0.25);
+  margin-top: auto;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 
 /* -------------------------
